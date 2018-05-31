@@ -3,6 +3,7 @@
 #include <iostream>
 int main(void)
 {
+	//Initialize the Library
 	if (!glfwInit()) {
 		printf("failed to initialize GLFW.\n");
 		return -1;
@@ -21,11 +22,6 @@ int main(void)
 	}
 
 	printf("OpenGL %s, GLSL %s\n", glGetString(GL_VERSION), glGetString(GL_SHADING_LANGUAGE_VERSION));
-
-
-	/* Initialize the library */
-
-
 
 	/* Create a windowed mode window and its OpenGL context */
 	if (!window)
